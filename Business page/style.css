@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #dab894 0%, #a52a2a 100%);
+    background-attachment: fixed;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.main-header {
+    background: linear-gradient(90deg, #f4a261, #e76f51);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    animation: fadeInDown 1s ease-in-out;
+    border-bottom: 5px solid #dab894; /* Bun-like border */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #3a5f0b; /* Lettuce Green */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff700; /* Cheese Yellow */
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff6347; /* Tomato Red */
+    transform: scale(1.2);
+}
+
+/* Sections */
+.section {
+    padding: 40px;
+    margin: 20px;
+    background-color: rgba(255, 239, 213, 0.9); /* Soft Bun Beige */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #333; /* Lettuce Dark Green */
+}
+
+button {
+    background-color: #e76f51; /* Sauce Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #2a9d8f; /* Cool contrasting color */
+    transform: scale(1.1);
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6a994e; /* Lettuce Green */
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
